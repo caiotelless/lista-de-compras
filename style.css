@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fonte_principal);
+}
+
+
+:root {
+    --cor_do_container: #21222C;
+    --fonte_principal: "Montserrat", sans-serif;
+    --cor_de_fundo: #282A36;
+    --cor_do_botao_add: #259dff;
+    --cor_da_tarefa: #282A36;
+    --cor_do_botao_concluido: #50F268;
+    --cor_do_botao_remover: #F24244;
+}
+
+body {
+    background-color: var(--cor_de_fundo);
+}
+
+.container {
+    background-color: var(--cor_do_container);
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0 auto;
+}
+
+.input_adicionar_tarefa {
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 35px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.btn_adicionar {
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    background-color: var(--cor_do_botao_add);
+    color: white;
+    padding: 0 15px;
+    font-size: 1rem;
+    float: right;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn_adicionar:hover {
+    opacity: 0.8;
+}
+
+.btn_adicionar:active {
+    transition: all 2s ease-in-out;
+    transform: scale(0.8);
+    opacity: 0.6;
+}
+
+.lista_de_tarefas {
+    width: 100%;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.tarefas {
+    background-color: var(--cor_da_tarefa);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.botao {
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.botao:hover {
+    opacity: 0.8;
+}
+
+.botao:active {
+    transition: all 1s ease-in-out;
+    transform: scale(0.9);
+}
+
+.btn_concluido {
+    background-color: var(--cor_do_botao_concluido);
+}
+
+.btn_remover {
+    background-color: var(--cor_do_botao_remover);
+}
+
+.done {
+    background-color: #48484c;
+    text-decoration: line-through;
+}
